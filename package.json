@@ -19,7 +19,8 @@
   },
   "scripts": {
     "test": "mocha tests/* --reporter spec",
-    "cover": "nyc --reporter=lcov --reporter=text-summary npm run test"
+    "coverB": "nyc --reporter=lcov --reporter=text-summary npm run test",
+    "cover": "nyc npm test && nyc report --reporter=lcov --reporter=text-summary && codecov"
   },
   "repository": {
     "type": "git",
@@ -33,10 +34,11 @@
   "homepage": "https://github.com/pankajvaghela/create-react-native-social#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "coveralls": "^3.0.11",
     "istanbul": "^0.4.5",
     "mocha": "^7.1.1",
     "nyc": "^15.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "codecov": "^3.6.5"
+  }
 }
