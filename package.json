@@ -20,7 +20,8 @@
   "scripts": {
     "test": "mocha tests/* --reporter spec",
     "coverB": "nyc --reporter=lcov --reporter=text-summary npm run test",
-    "cover": "nyc npm test && nyc report --reporter=lcov --reporter=text-summary && codecov"
+    "cover": "nyc npm test && nyc report --reporter=lcov --reporter=text-summary",
+    "cover-reports": "codecov"
   },
   "repository": {
     "type": "git",
