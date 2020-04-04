@@ -1,0 +1,29 @@
+{
+  "name": "create-react-native-social",
+  "version": "1.0.0",
+  "description": "Kickstart React Native app with Social Login",
+  "keywords": [
+    "react-native",
+    "social",
+    "social-login",
+    "cli",
+    "auth"
+  ],
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pankajvaghela/create-react-native-social.git"
+  },
+  "author": "Pankaj Vaghela <vpankaj1998official@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pankajvaghela/create-react-native-social/issues"
+  },
+  "homepage": "https://github.com/pankajvaghela/create-react-native-social#readme"
+}
