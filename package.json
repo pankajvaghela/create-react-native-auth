@@ -18,7 +18,8 @@
     "create-react-native-social": "./lib/init.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/* --reporter spec",
+    "cover": "nyc --reporter=lcov --reporter=text-summary npm run test"
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,13 @@
   "bugs": {
     "url": "https://github.com/pankajvaghela/create-react-native-social/issues"
   },
-  "homepage": "https://github.com/pankajvaghela/create-react-native-social#readme"
+  "homepage": "https://github.com/pankajvaghela/create-react-native-social#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.11",
+    "istanbul": "^0.4.5",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.1"
+  },
+  "dependencies": {}
 }
