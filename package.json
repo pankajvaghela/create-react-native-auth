@@ -12,16 +12,16 @@
   "engines": {
     "node": ">=4.2.4"
   },
-  "main": "./lib/index.js",
+  "main": "./lib/init.js",
   "bin": {
     "init": "./lib/init.js",
+    "crns": "./lib/init.js",
     "create-react-native-social": "./lib/init.js"
   },
   "scripts": {
     "test": "mocha tests/* --reporter spec",
-    "coverB": "nyc --reporter=lcov --reporter=text-summary npm run test",
     "cover": "nyc npm test && nyc report --reporter=lcov --reporter=text-summary",
-    "coverall":"nyc report --reporter=text-lcov | coveralls"
+    "coverall": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -41,6 +41,11 @@
     "nyc": "^15.0.1"
   },
   "dependencies": {
-    "codecov": "^3.6.5"
+    "chalk": "^4.0.0",
+    "clear": "^0.1.0",
+    "codecov": "^3.6.5",
+    "inquirer": "^7.1.0",
+    "shell": "^0.5.0",
+    "shelljs": "^0.8.3"
   }
 }
