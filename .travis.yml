@@ -6,8 +6,15 @@ node_js:
 install:
   - npm install
 
+#script:
+#  - npm run cover
+
+# Send coverage data to Coveralls
+#after_script: "coverage"
+
+
 script:
   - npm run cover
 
 # Send coverage data to Coveralls
-after_script: "cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js"
+after_script: "npm run coverall"

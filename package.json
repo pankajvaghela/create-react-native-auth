@@ -19,7 +19,9 @@
   },
   "scripts": {
     "test": "mocha tests/* --reporter spec",
-    "cover": "nyc --reporter=lcov --reporter=text-summary npm run test"
+    "coverB": "nyc --reporter=lcov --reporter=text-summary npm run test",
+    "cover": "nyc npm test && nyc report --reporter=lcov --reporter=text-summary",
+    "coverall":"nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -38,5 +40,7 @@
     "mocha": "^7.1.1",
     "nyc": "^15.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "codecov": "^3.6.5"
+  }
 }
