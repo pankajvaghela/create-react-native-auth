@@ -6,9 +6,15 @@ node_js:
 install:
   - npm install
 
+#script:
+#  - npm run cover
+
+# Send coverage data to Coveralls
+#after_script: "coverage"
+
+
 script:
   - npm run cover
 
 # Send coverage data to Coveralls
-after_script: 
-  - "npm run cover-reports"
+# after_script: "npm run coverall"
