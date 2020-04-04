@@ -14,7 +14,8 @@
   },
   "main": "./lib/index.js",
   "bin": {
-    "init": "./lib/init.js"
+    "init": "./lib/init.js",
+    "create-react-native-social": "./lib/init.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
