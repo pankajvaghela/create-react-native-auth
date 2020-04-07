@@ -46,9 +46,8 @@
     "clear": "^0.1.0",
     "codecov": "^3.6.5",
     "fs-extra": "^9.0.0",
-    "gradle-to-js": "^2.0.0",
     "inquirer": "^7.1.0",
-    "shell": "^0.5.0",
+    "inquirer-confirm-extra": "^1.0.1",
     "shelljs": "^0.8.3"
   }
 }
