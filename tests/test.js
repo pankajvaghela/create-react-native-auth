@@ -41,7 +41,8 @@ describe('integrated tests', function() {
     await createApp("testapp");
 
     expect(fs.existsSync(cPath+'/testapp')).to.be.true;
-    shell.rm('-rf', 'testapp');
+    shell.rm('-rf', './../testapp');
+    shell.cd("..");
   });
 
   it('it should init npm project',  function(done){
