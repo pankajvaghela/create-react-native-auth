@@ -13,3 +13,29 @@ Run with npx
 ```js
 npx github:pankajvaghela/create-react-native-social
 ```
+
+## Usage
+
+### Redux
+
+wrap redux and persistor around your main component
+
+```js
+
+import React, { Component } from 'react'
+import { Provider } from 'react-redux'
+import { PersistGate } from 'redux-persist/integration/react';
+
+//TODO: make sure import path is correct 
+import {store, persistor} from '../redux/store/configureStore';
+
+export default function AppContainer(){
+  return (
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <AppNavigation />
+      </PersistGate>
+    </Provider>
+  );
+}
+```
