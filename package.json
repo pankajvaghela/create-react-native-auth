@@ -49,6 +49,6 @@
     "inquirer": "^7.1.0",
     "inquirer-confirm-extra": "^1.0.1",
     "semver": "^7.2.1",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.5"
   }
 }
